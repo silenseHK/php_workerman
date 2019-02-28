@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+    <ul id="wrap">
+
+        <!--<li>-->
+            <!--<p>你好</p>-->
+            <!--<hr />-->
+        <!--</li>-->
+
+    </ul>
+
+    <input name="message" type="text" />
+
+    <button id="submit">提交</button>
+
+    <script>
+        ws = new WebSocket("ws://127.0.0.1:7272");
+        ws.onopen = function() {
+            alert("连接成功");
+            // ws.send('tom');
+            // alert("给服务端发送一个字符串：tom");
+        };
+        ws.onmessage = function(e) {
+            // alert("收到服务端的消息：" + e.data);
+            $('#wrap').append('<li>' +
+                '            <p>'+e.data+'</p>' +
+                '            <hr />' +
+                '        </li>')
+        };
+
+        $('#submit').on('click',function(){
+
+            var message = $('input[name=message]').val();
+
+            if($.trim(message)){
+                ws.send(message);
+                // alert('信息发送成功')
+            }
+
+        })
+
+    </script>
+</body>
+</html>
