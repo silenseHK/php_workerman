@@ -1,0 +1,144 @@
+2019-03-01 09:24:48 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:56
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', 'dasdsa')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', 'dasdsa')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 09:24:48 pid:1 Worker process terminated
+2019-03-01 09:42:51 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:56
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', 'dadsa')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', 'dadsa')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 09:42:51 pid:1 Worker process terminated
+2019-03-01 09:49:23 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:56
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', 'dsadsa')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', 'dsadsa')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 09:49:23 pid:1 Worker process terminated
+2019-03-01 11:46:18 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '[object Object]')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '[object Object]')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 11:46:18 pid:1 Worker process terminated
+2019-03-01 11:57:54 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '[object Object]')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '[object Object]')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 11:57:54 pid:1 Worker process terminated
+2019-03-01 14:34:53 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '[object Object]')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '[object Object]')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 14:34:53 pid:1 Worker process terminated
+2019-03-01 14:35:34 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '[object Object]')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '[object Object]')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 14:35:34 pid:1 Worker process terminated
+2019-03-01 14:36:48 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '[object Object]')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '[object Object]')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 14:36:48 pid:1 Worker process terminated
+2019-03-01 14:43:13 pid:1 Exception: 请求异常 in E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\Events.php:57
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{type:'BIND_UID...')
+#1 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{type:'BIND_UID...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#9 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#10 E:\hk\project\git\GatewayWorkerDemo\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#11 E:\hk\project\git\GatewayWorkerDemo\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-03-01 14:43:13 pid:1 Worker process terminated

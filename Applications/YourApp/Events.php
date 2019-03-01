@@ -38,9 +38,13 @@ class Events
     {
 
         // 向当前client_id发送数据 
-        Gateway::sendToClient($client_id, "Hello $client_id\r\n");
+        Gateway::sendToClient($client_id, returnJson('LOGIN',['client_id'=>$client_id]));
         // 向所有人发送
-        Gateway::sendToAll("$client_id login\r\n");
+
+//        Gateway::sendToAll();
+        //获取当前房间的所有人数
+        $members = Gateway::getAllClientIdList();
+        Gateway::sendToAll(returnJson('MEMBERS',['members'=>$members]));
     }
     
    /**
@@ -61,12 +65,23 @@ class Events
 
            case 'ping':
                return;
-
-
+           case 'BIND_UID':
+               Gateway::bindUid($client_id,(int)$message_data['uid']);
+               echo $client_id;
+               Gateway::sendToClient($client_id,returnJson('TIP','uid绑定成功'));
+               Gateway::sendToAll(returnJson('INFO','欢迎uid为'.(int)$message_data['uid'].'的用户加入房间'));
+               break;
+           case 'TALK':
+               $uid = Gateway::getUidByClientId($client_id);
+               Gateway::sendToAll(returnJson('MESSAGE',['uid'=>$uid,'message'=>$message_data['message']]));
+               break;
+           case 'DEL_MEMBER':
+               Gateway::closeClient($message_data['client_id']);
+               break;
        }
 
         // 向所有人发送 
-        Gateway::sendToAll("$client_id said $message\r\n");
+//        Gateway::sendToAll("$client_id said $message\r\n");
    }
    
    /**
@@ -75,7 +90,17 @@ class Events
     */
    public static function onClose($client_id)
    {
+       $uid = Gateway::getUidByClientId($client_id);
        // 向所有人发送 
-       GateWay::sendToAll("$client_id logout\r\n");
+       GateWay::sendToAll(returnJson('INFO',"用户{$uid}离开房间"));
+
+       $members = Gateway::getAllClientIdList();
+       Gateway::sendToAll(returnJson('MEMBERS',['members'=>$members]));
    }
 }
+
+function returnJson($type,$data){
+    return "'".json_encode(compact('type','data'))."'";
+}
+
+
